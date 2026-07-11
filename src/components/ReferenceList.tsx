@@ -39,7 +39,7 @@ export function ReferenceList({ references, onRemove, onClear }: ReferenceListPr
     <div className="ref-list">
       <div className="ref-list-header">
         <span className="ref-list-title">
-          <svg width="18" height="14" viewBox="0 0 18 14" fill="none" style={{ verticalAlign: -2, marginRight: 6 }}>
+          <svg width="18" height="14" viewBox="0 0 18 14" fill="none">
             <path d="M1 3 L5 3 M1 7 L5 7 M1 11 L5 11 M8 3 L17 3 M8 7 L17 7 M8 11 L14 11" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" />
           </svg>
           Minha lista

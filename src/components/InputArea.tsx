@@ -62,8 +62,8 @@ export function InputArea({ onSubmit, onDetect, detectedType, loading, onManualC
         )}
       </div>
 
-      <div style={{ display: 'flex', gap: 8, marginBottom: 20 }}>
-        <button className="btn-format" onClick={handleSubmit} disabled={!value.trim() || loading} style={{ flex: 1, marginBottom: 0 }}>
+      <div className="btn-row">
+        <button className="btn-format" onClick={handleSubmit} disabled={!value.trim() || loading}>
           {loading ? (
             <>
               <span className="spinner" />
@@ -78,12 +78,8 @@ export function InputArea({ onSubmit, onDetect, detectedType, loading, onManualC
             </>
           )}
         </button>
-        <button
-          className="btn-format"
-          onClick={onManualClick}
-          style={{ flex: 'none', width: 'auto', padding: '14px 18px', marginBottom: 0, background: 'transparent', color: 'var(--ink)', border: '1.5px solid var(--border)' }}
-        >
-          Manual
+        <button className="btn-format btn-secondary" onClick={onManualClick}>
+          entrada manual
         </button>
       </div>
     </>

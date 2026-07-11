@@ -3,7 +3,6 @@ import type { ReferenceType, ReferenceMetadata, ThesisType } from '../engine/typ
 
 interface ManualFormProps {
   onSubmit: (metadata: ReferenceMetadata) => void;
-  onCancel: () => void;
 }
 
 const TYPE_LABELS: Record<ReferenceType, string> = {
@@ -14,7 +13,7 @@ const TYPE_LABELS: Record<ReferenceType, string> = {
   thesis: 'Trabalho acadêmico',
 };
 
-export function ManualForm({ onSubmit, onCancel }: ManualFormProps) {
+export function ManualForm({ onSubmit }: ManualFormProps) {
   const [refType, setRefType] = useState<ReferenceType>('article');
   const [fields, setFields] = useState<Record<string, string>>({});
 
@@ -136,14 +135,9 @@ export function ManualForm({ onSubmit, onCancel }: ManualFormProps) {
         <Field label="Acesso em" name="accessDate" placeholder="11 jul. 2026" />
       </div>
 
-      <div style={{ display: 'flex', gap: 8, marginTop: 16 }}>
-        <button className="btn-format" onClick={handleSubmit} style={{ flex: 1, marginBottom: 0 }}>
-          Formatar
-        </button>
-        <button className="btn-format" onClick={onCancel} style={{ flex: 'none', padding: '14px 18px', marginBottom: 0, background: 'transparent', color: 'var(--ink)', border: '1.5px solid var(--border)' }}>
-          Voltar
-        </button>
-      </div>
+      <button className="btn-format" onClick={handleSubmit} style={{ width: '100%', marginTop: 16, marginBottom: 0 }}>
+        Formatar
+      </button>
     </div>
   );
 }

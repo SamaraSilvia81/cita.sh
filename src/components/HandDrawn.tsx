@@ -1,19 +1,13 @@
 export function ScribbleUnderline({ width = 200, color = '#93032E' }: { width?: number; color?: string }) {
+  // Um único traço, cor cheia — antes eram dois traços sobrepostos com
+  // opacidades diferentes, o que lavava a cor. Agora é uma cor só, mais forte.
   return (
     <svg width={width} height="10" viewBox={`0 0 ${width} 10`} fill="none" className="hero-underline">
       <path
         d={`M5 6 C${width * 0.12} 2, ${width * 0.22} 8, ${width * 0.32} 4 C${width * 0.42} 0, ${width * 0.52} 8, ${width * 0.62} 4 C${width * 0.72} 0, ${width * 0.82} 7, ${width * 0.97} 3`}
         stroke={color}
-        strokeWidth="1.5"
+        strokeWidth="2"
         strokeLinecap="round"
-        opacity="0.6"
-      />
-      <path
-        d={`M${width * 0.05} 8 C${width * 0.17} 3, ${width * 0.27} 9, ${width * 0.37} 5 C${width * 0.47} 1, ${width * 0.57} 8, ${width * 0.7} 5 C${width * 0.8} 2, ${width * 0.9} 7, ${width * 0.96} 5`}
-        stroke={color}
-        strokeWidth="0.8"
-        strokeLinecap="round"
-        opacity="0.25"
       />
     </svg>
   );
