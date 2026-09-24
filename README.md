@@ -1,5 +1,11 @@
 # Cita.sh
 
+![TIPO](https://img.shields.io/static/v1?label=TIPO&message=Utility%20Tool&color=231f20&style=for-the-badge)
+![STATUS](https://img.shields.io/static/v1?label=STATUS&message=Em%20Desenvolvimento&color=f59e0b&style=for-the-badge)
+![PADRÃO](https://img.shields.io/static/v1?label=PADR%C3%83O&message=ABNT%20NBR%206023%3A2018&color=7c3aed&style=for-the-badge)
+![STACK](https://img.shields.io/static/v1?label=STACK&message=React%20%2B%20TypeScript&color=3178c6&style=for-the-badge)
+![BACKEND](https://img.shields.io/static/v1?label=BACKEND&message=Nenhum&color=6b7280&style=for-the-badge)
+
 Formatador de referências bibliográficas no padrão **ABNT NBR 6023:2018**.
 
 Você cola um DOI ou ISBN, o Cita.sh busca os metadados reais da publicação e devolve a referência formatada. Nada é gerado por IA: os dados vêm do CrossRef e da Open Library, e a formatação segue regras fixas. A mesma entrada sempre produz a mesma saída.
