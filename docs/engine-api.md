@@ -1,5 +1,10 @@
 # Engine do Cita.sh — Referência da API
 
+![DOC](https://img.shields.io/static/v1?label=DOC&message=Refer%C3%AAncia%20de%20API&color=231f20&style=for-the-badge)
+![LINGUAGEM](https://img.shields.io/static/v1?label=LINGUAGEM&message=TypeScript&color=3178c6&style=for-the-badge)
+![DEPENDÊNCIAS](https://img.shields.io/static/v1?label=DEPEND%C3%8ANCIAS&message=Zero&color=16a34a&style=for-the-badge)
+![FONTES](https://img.shields.io/static/v1?label=FONTES&message=CrossRef%20%2B%20Open%20Library&color=7c3aed&style=for-the-badge)
+
 A engine é o núcleo do Cita.sh: detecta o tipo de entrada, busca metadados em APIs públicas, formata a referência em ABNT NBR 6023:2018 e exporta para BibTeX e RIS.
 
 Ela é escrita em TypeScript, não depende de React e é importada de um único ponto:
